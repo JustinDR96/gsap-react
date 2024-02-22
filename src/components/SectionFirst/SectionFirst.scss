@@ -1,0 +1,153 @@
+.section-first {
+  height: 100vh;
+  background-image: url(/images/background/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container-first {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 2;
+  h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 110px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-shadow: 0 0 15px #f1f1f1;
+    span {
+      position: relative;
+    }
+  }
+}
+
+.container-btns {
+  position: relative;
+  top: 50px;
+  .btn-first {
+    border: solid 2px #f1f1f1;
+    font-weight: bold;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 250px;
+    color: #f1f1f1;
+    border-radius: 20px;
+    cursor: pointer;
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
+    &:hover {
+      animation: all 0.3s ease-in-out;
+      background: #f1f1f1;
+      color: #333;
+    }
+  }
+}
+
+.lignes {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  .l1 {
+    width: 250px;
+    height: 4px;
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  .l2 {
+    width: 140px;
+    height: 4px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+  }
+}
+
+.canette {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  width: 250px;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px #f1f1f1);
+}
+
+@include tablet {
+  .container-first {
+    top: 40%;
+    left: 5%;
+    h1 {
+      font-size: 80px;
+    }
+  }
+
+  .container-btns {
+    top: 30px;
+    .btn-first {
+      font-size: 20px;
+      padding: 15px;
+      width: 200px;
+    }
+  }
+
+  .lignes {
+    top: 3%;
+    left: 5%;
+    .l1 {
+      width: 200px;
+    }
+    .l2 {
+      width: 100px;
+    }
+  }
+  .canette {
+    width: 200px;
+    right: 30%;
+    top: 20%;
+  }
+}
+
+@include mobile {
+  .container-first {
+    top: 30%;
+    left: 5%;
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  .container-btns {
+    top: 20px;
+    .btn-first {
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+      &:nth-child(1) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .lignes {
+    top: 1%;
+    left: 5%;
+    .l1 {
+      width: 150px;
+    }
+    .l2 {
+      width: 80px;
+    }
+  }
+  .canette {
+    width: 150px;
+    right: 15%;
+    top: 20%;
+  }
+}
