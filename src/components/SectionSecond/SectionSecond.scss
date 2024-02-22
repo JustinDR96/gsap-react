@@ -1,0 +1,14 @@
+.section-second {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-left,
+.container-right {
+  border: solid 3px red;
+  width: 40%;
+  height: 80%;
+}

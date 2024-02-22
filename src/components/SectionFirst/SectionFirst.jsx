@@ -30,8 +30,8 @@ function SectionFirst() {
       .add(
         gsap.fromTo(
           ".canette",
-          { y: 0 },
-          { y: 15, duration: 2, yoyo: true, repeat: -1, ease: "power2.inOut" }
+          { y: -5 },
+          { y: 15, duration: 1.5, yoyo: true, repeat: -1, ease: "power2.inOut" }
         ),
         0
       )
@@ -69,9 +69,9 @@ function SectionFirst() {
           {
             rotate: 0,
           },
-          { rotate: 15, duration: 3, ease: "power2.out" },
-          "0"
-        )
+          { rotate: 15, duration: 3, ease: "power2.out" }
+        ),
+        0
       );
 
     ScrollTrigger.create({
