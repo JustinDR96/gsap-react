@@ -29,19 +29,25 @@ function SectionFirst() {
       )
       .add(
         gsap.fromTo(
-          ".canette",
-          { y: -5 },
-          { y: 15, duration: 1.5, yoyo: true, repeat: -1, ease: "power2.inOut" }
+          "#canette",
+          { y: 0 },
+          {
+            y: 15,
+            duration: 2,
+            yoyo: true,
+            repeat: -1,
+            repeatDelay: 0,
+            ease: "power2.inOut",
+          }
         ),
         0
       )
       .add(
-        gsap.from(".canette", {
+        gsap.from("#canette", {
           duration: 1,
           right: -50,
           opacity: 0,
           ease: "power2.out",
-          stagger: 0.5,
         }),
         0.3
       )
@@ -65,7 +71,7 @@ function SectionFirst() {
       )
       .add(
         gsap.fromTo(
-          ".canette",
+          "#canette",
           {
             rotate: 0,
           },
@@ -87,8 +93,8 @@ function SectionFirst() {
   return (
     <div className="section-first">
       <div className="lignes">
-        <div className="l1"></div>
-        <div className="l2"></div>
+        <div className="l1" />
+        <div className="l2" />
       </div>
 
       <div className="container-first">
@@ -104,7 +110,7 @@ function SectionFirst() {
         </div>
       </div>
 
-      <img src="/images/can.png" alt="" className="canette" />
+      <img src="/images/can.png" alt="" className="canette" id="canette" />
     </div>
   );
 }

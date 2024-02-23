@@ -1,6 +1,7 @@
 import "./styles/App.scss";
 import SectionFirst from "./components/SectionFirst/SectionFirst";
 import SectionSecond from "./components/SectionSecond/SectionSecond";
+import SectionThird from "./components/SectionThird/SectionThird";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <main>
         <SectionFirst />
         <SectionSecond />
+        <SectionThird />
       </main>
     </>
   );
