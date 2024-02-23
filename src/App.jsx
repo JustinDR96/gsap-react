@@ -9,7 +9,7 @@ function App() {
       <main>
         <SectionFirst />
         <SectionSecond />
-        {/* <SectionThird /> */}
+        <SectionThird />
       </main>
     </>
   );
