@@ -10,10 +10,9 @@ function SectionSecond() {
 
     tl.add(
       gsap.from("#logo", {
-        x: -100,
         duration: 2,
         opacity: 0,
-
+        scale: 0.5,
         ease: "power2.out",
         id: "logo",
       }),
