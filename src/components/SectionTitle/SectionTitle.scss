@@ -10,17 +10,31 @@
   align-items: center;
   border-top: solid 2px rgba(241, 241, 241, 0.8);
   border-bottom: solid 2px rgba(241, 241, 241, 0.8);
-  ul {
-    color: rgba(241, 241, 241, 0.8);
+  overflow: hidden;
+  .marquee-content {
     width: 100%;
-    list-style: none;
+    color: rgba(241, 241, 241, 0.8);
     display: flex;
     justify-content: space-between;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+    span {
+      margin-right: 50px;
+    }
   }
   @include tablet {
     font-size: 20px;
   }
   @include mobile {
     font-size: 15px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
