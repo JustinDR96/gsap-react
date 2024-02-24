@@ -50,10 +50,6 @@ function SectionSecond() {
           consequuntur voluptatibus natus, doloribus ducimus perspiciatis optio
           quae eveniet libero quidem quibusdam, ullam illum, perferendis
           corporis cum necessitatibus pariatur asperiores. Sapiente aut nisi
-          assumenda cupiditate. Assumenda eaque eos cupiditate quae quis
-          voluptatum aliquam eius mollitia quos repellendus optio qui
-          repudiandae dolor suscipit rem dicta, eveniet nam rerum a dolorum
-          consequuntur
         </p>
       </div>
     </div>

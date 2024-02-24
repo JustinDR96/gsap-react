@@ -47,7 +47,7 @@ function SectionThird() {
             scale: 1,
             rotate: 360,
             duration: 0.8,
-            ease: "power2.out",
+            ease: "expo.out",
             stagger: 0,
           }
         )
@@ -60,7 +60,7 @@ function SectionThird() {
       start: "top bottom",
       end: "bottom center",
       scrub: true,
-      markers: true,
+
       onEnter: () => tl.restart(),
       onEnterBack: () => tl.restart(),
     });

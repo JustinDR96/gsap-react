@@ -11,7 +11,26 @@ html {
   min-height: 100vh;
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
+  background-image: url(/images/background/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main {
   overflow: hidden;
+}
+
+/* Pour WebKit (Safari, Chrome, etc) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: url(/images/background/bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
 }
