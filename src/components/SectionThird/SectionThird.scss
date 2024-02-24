@@ -1,3 +1,33 @@
 .section-third {
-  height: 100vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid 2px green;
+}
+
+.container-third {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px;
+  width: 350px;
+  height: 200px;
+  border: solid 1px rgba(51, 51, 51, 0.2);
+  border-radius: 10px;
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+  }
+  img {
+    width: 100px;
+    position: absolute;
+    right: 5px;
+    bottom: -50px;
+  }
 }
