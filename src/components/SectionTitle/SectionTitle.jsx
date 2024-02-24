@@ -39,7 +39,6 @@ function SectionTitle() {
         {titles.map((title) => (
           <div key={title.id} className="box">
             {title.title}
-            <span>//</span>
           </div>
         ))}
       </div>

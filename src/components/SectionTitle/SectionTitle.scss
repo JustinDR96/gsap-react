@@ -17,6 +17,9 @@
   @include tablet {
     font-size: 15px;
   }
+  @include mobile {
+    font-size: 11px;
+  }
 }
 .box {
   display: flex;
@@ -26,7 +29,4 @@
   position: relative;
   flex-shrink: 0;
   color: #f1f1f1;
-  span {
-    font-size: 40px;
-  }
 }
