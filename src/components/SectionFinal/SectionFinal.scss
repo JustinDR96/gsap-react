@@ -1,0 +1,90 @@
+.section-final {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+.final-right {
+  width: 550px;
+  height: 600px;
+}
+
+.final-right {
+  position: relative;
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    @include mobile {
+      width: 100px;
+      height: 100px;
+    }
+    &:nth-child(1) {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(2) {
+      position: absolute;
+      top: 55%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(3) {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(4) {
+      position: absolute;
+      top: 25%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(5) {
+      position: absolute;
+      top: 25%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(6) {
+      position: absolute;
+      top: 60%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(7) {
+      position: absolute;
+      top: 42%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(8) {
+      position: absolute;
+      top: 35%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.final-left {
+  color: rgba(241, 241, 241, 0.8);
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 30px;
+  @include tablet {
+    font-size: 40px;
+    padding: 10px;
+  }
+}

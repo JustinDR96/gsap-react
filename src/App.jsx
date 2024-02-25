@@ -3,6 +3,7 @@ import SectionFirst from "./components/SectionFirst/SectionFirst";
 import SectionSecond from "./components/SectionSecond/SectionSecond";
 import SectionThird from "./components/SectionThird/SectionThird";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
+import SectionFinal from "./components/SectionFinal/SectionFinal";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <SectionTitle />
         <SectionSecond />
         <SectionThird />
+        <SectionFinal />
       </main>
     </>
   );
