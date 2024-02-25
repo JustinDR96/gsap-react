@@ -24,13 +24,13 @@ function SectionTitle() {
   });
 
   const titles = [
-    { id: 1, title: "Brand 1" },
-    { id: 2, title: "Brand 2" },
-    { id: 3, title: "Brand 3" },
-    { id: 4, title: "Brand 4" },
-    { id: 5, title: "Brand 5" },
-    { id: 6, title: "Brand 6" },
-    { id: 7, title: "Brand 7" },
+    { id: 1, title: "Energy" },
+    { id: 2, title: "Vitality" },
+    { id: 3, title: "Booster" },
+    { id: 4, title: "guarana" },
+    { id: 5, title: "endurance" },
+    { id: 6, title: "flavor" },
+    { id: 7, title: "performance" },
   ];
 
   return (

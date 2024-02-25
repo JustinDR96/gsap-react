@@ -18,31 +18,42 @@
 .container-left,
 .container-right {
   width: 40%;
-  height: 80%;
 }
 
 .container-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
+  gap: 2rem;
+  max-width: 500px;
   h1 {
     text-align: left;
     font-size: 80px;
     font-weight: bold;
-    margin-bottom: 20px;
   }
-  p {
+  ul {
     text-align: justify;
     font-size: 20px;
-    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   @include tablet {
     h1 {
       font-size: 40px;
     }
-    p {
+    ul {
       font-size: 15px;
+      gap: 10px;
+    }
+  }
+  @include mobile {
+    h1 {
+      font-size: 30px;
+    }
+    ul {
+      font-size: 11px;
     }
   }
 }

@@ -17,16 +17,26 @@ function SectionSecond() {
         id: "logo",
       }),
       0
-    ).add(
-      gsap.from(".container-right h1, .container-right p", {
-        x: 100,
-        duration: 2,
-        opacity: 0,
-        ease: "power2.out",
-        stagger: 0.2,
-      }),
-      0
-    );
+    )
+      .add(
+        gsap.from(".container-right h1", {
+          x: 100,
+          duration: 2,
+          opacity: 0,
+          ease: "power2.out",
+        }),
+        0
+      )
+      .add(
+        gsap.from(".container-right ul li", {
+          x: 100,
+          duration: 1,
+          opacity: 0,
+          ease: "power2.out",
+          stagger: 0.5,
+        }),
+        0
+      );
 
     ScrollTrigger.create({
       trigger: ".section-second",
@@ -45,12 +55,18 @@ function SectionSecond() {
       </div>
       <div className="container-right">
         <h1>Our Story</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro
-          consequuntur voluptatibus natus, doloribus ducimus perspiciatis optio
-          quae eveniet libero quidem quibusdam, ullam illum, perferendis
-          corporis cum necessitatibus pariatur asperiores. Sapiente aut nisi
-        </p>
+        <ul>
+          <li>Natural fruit juices</li>
+          <li>Coconut water</li>
+          <li>Guarana extract</li>
+          <li>Taurine</li>
+          <li>Ginseng extract</li>
+          <li>Green tea extract</li>
+          <li>Stevia (natural sweetener)</li>
+          <li>Vitamins (vitamin C, vitamin B)</li>
+          <li>Minerals (potassium, magnesium)</li>
+          <li>Citric acid (for acidity)</li>
+        </ul>
       </div>
     </div>
   );

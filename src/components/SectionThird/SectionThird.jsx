@@ -34,7 +34,7 @@ function SectionThird() {
           opacity: 0,
           ease: "power2.out",
           stagger: 0.5,
-          delay: i * 0.4,
+          delay: i * 0.3,
         }),
         0
       ).add(
@@ -46,11 +46,13 @@ function SectionThird() {
           {
             scale: 1,
             rotate: 360,
-            duration: 0.8,
+            duration: 1,
             ease: "expo.out",
-            stagger: 0,
+            stagger: 0.5,
+            delay: i * 0.3,
           }
-        )
+        ),
+        1
       );
     }
 

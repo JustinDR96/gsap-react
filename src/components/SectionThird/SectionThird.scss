@@ -1,16 +1,14 @@
 .section-third {
   height: max-content;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-items: center;
   align-items: center;
   justify-content: space-evenly;
-  // background-image: url("/images/background/bg1.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 50px 0;
   color: rgba(241, 241, 241, 0.98);
   @include tablet {
-    flex-direction: column;
     gap: 50px;
   }
 }
